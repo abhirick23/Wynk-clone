@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Shippori+Antique+B1&display=swap');
+body{
+    background-color: bisque;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    font-family: 'Italianno' , sans-serif;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: whitesmoke;
+    
+}
+
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 75vh;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url('wynk/bg.jpg');
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgress{
+    width: 80vw;
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin-top: 60px;
+}
+.songitem{
+    height: 50px;
+    display: flex;
+    background-color: whitesmoke;
+    width: 110%;
+    color: black;
+    margin: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+.songitem img{
+    width: 45px;
+    margin: 0px 20px;
+    border-radius: 30px;
+}
+.timestamp{
+    margin: 0 20px;   
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Italianno' , sans-serif;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+}
